@@ -6,9 +6,9 @@
         android:endColor="#43c6ac"
         android:angle="180"/>
     <padding android:left="7dp"
-        android:top="7dp"
+        android:top="3dp"
         android:right="7dp"
-        android:bottom="7dp" />
+        android:bottom="3dp" />
     <stroke
         android:width="2dip"
         android:color="#D1D0D0" />

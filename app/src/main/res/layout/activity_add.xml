@@ -1,9 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddActivity">
+    tools:context=".UpdateActivity"
+    android:background = "@drawable/headup_game_backg"
 
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="333dp"
+        android:layout_height="353dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.775">
+
+
+        <EditText
+            android:id="@+id/nameET"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/custom_edittext"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:gravity=""
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp" />
+
+        <EditText
+            android:id="@+id/taboo1ET"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Taboo 1"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp" />
+
+        <EditText
+            android:id="@+id/taboo2ET"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Taboo 2"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp" />
+
+        <EditText
+            android:id="@+id/taboo3ET"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Taboo 3"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/addBtn"
+            android:layout_width="165dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/custom_button"
+            android:text="ADD" />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="@color/lightgreen"
+        android:text="BACK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/loadingPB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>

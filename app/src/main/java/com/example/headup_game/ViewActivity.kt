@@ -35,6 +35,10 @@ class ViewActivity : AppCompatActivity() {
             intent = Intent(applicationContext, AddActivity::class.java)
             startActivity(intent)
         }
+        binding.homeBtn.setOnClickListener {
+            intent = Intent(applicationContext, MainActivity::class.java)
+            startActivity(intent)
+        }
 
         binding.searchBtn.setOnClickListener {
             val name = binding.nameET.text.toString()

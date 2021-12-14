@@ -30,6 +30,7 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginLeft="20dp"
+
             android:background="@drawable/search"
             tools:ignore="SpeakableTextPresentCheck" />
 
@@ -44,12 +45,24 @@
         android:paddingBottom="10dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/row_recyclerview" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
 <androidx.appcompat.widget.AppCompatButton
     android:id="@+id/addBtn"
-    android:layout_width="match_parent"
+    android:layout_width="210dp"
     android:layout_height="match_parent"
-    android:background="@drawable/custom_button"
-    android:text="ADD NEW CELEBRITY"
+    android:backgroundTint="@color/lightgreen"
+    android:text="HOME"
     />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/homeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/lightgreen"
+        android:text="ADD CELEBRITY"
+        />
+
+</LinearLayout>
 </LinearLayout>
