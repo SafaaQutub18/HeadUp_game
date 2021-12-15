@@ -43,9 +43,7 @@ class ViewActivity : AppCompatActivity() {
         binding.searchBtn.setOnClickListener {
             val name = binding.nameET.text.toString()
             searchForClebrity(name)
-
         }
-
 
     }
 

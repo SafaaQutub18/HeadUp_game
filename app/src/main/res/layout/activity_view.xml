@@ -50,19 +50,19 @@
     android:layout_height="wrap_content">
 
 <androidx.appcompat.widget.AppCompatButton
-    android:id="@+id/addBtn"
+    android:id="@+id/homeBtn"
     android:layout_width="210dp"
     android:layout_height="match_parent"
     android:backgroundTint="@color/lightgreen"
     android:text="HOME"
     />
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/homeBtn"
+        android:id="@+id/addBtn"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:backgroundTint="@color/lightgreen"
         android:text="ADD CELEBRITY"
         />
-
 </LinearLayout>
+
 </LinearLayout>
