@@ -119,7 +119,6 @@ class GameActivity : AppCompatActivity() {
         }
     }
 
-
     private fun startTimer() {
         if(!gameRunning)
             return
